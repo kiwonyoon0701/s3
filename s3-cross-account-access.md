@@ -30,6 +30,7 @@ Requester
 
 Provider
 - S3 -> Permissions -> Bucket Policy
+```bash
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -49,5 +50,5 @@ Provider
         }
     ]
 }
-
+```
 
