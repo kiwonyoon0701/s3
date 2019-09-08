@@ -10,6 +10,7 @@ Canonical Id : 73478f1106ef73c64360a9ba0f345f3e606c426aa9f6d15fe4d0421a048b78be
 
 Requester 
 - Create policy : s3-cross-access-from-documents-kiwony-731146858750
+```bash
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -24,6 +25,7 @@ Requester
         }
     ]
 }
+```
 
 
 Provider
