@@ -21,7 +21,10 @@ Requester
                 "s3:PutObject",
                 "s3:PutObjectAcl"
             ],
-            "Resource": "arn:aws:s3:::documents-kiwony/*"
+            "Resource": [
+                "arn:aws:s3:::documents-kiwony/*",
+                "arn:aws:s3:::oracle-kiwony/*"
+            ]
         }
     ]
 }
@@ -30,6 +33,7 @@ Requester
 
 Provider
 - S3 -> Permissions -> Bucket Policy
+  ## There is no way to configure integrated policty to cover multiple s3 bucket policy
 ```bash
 {
     "Version": "2012-10-17",
@@ -53,7 +57,7 @@ Provider
 ```
 
 S3 -> Permissions -> Access Control List -> Acess for other AWS accounts
-Add Requestor's canonical ID and give list permissions.
+Add Requestor's canonical ID and give list object permissions.
 
 
 
